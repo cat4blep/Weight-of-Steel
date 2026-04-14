@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "armorweight",
+  "version": "${version}",
+  "name": "Armor Weight",
+  "description": "Замедляет игрока в зависимости от веса надетой брони без ванильного эффекта замедления.",
+  "authors": [
+    "cat4blep"
+  ],
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "ru.ke4e.armorweight.ArmorWeightMod"
+    ],
+    "client": [
+      "ru.ke4e.armorweight.ArmorWeightClient"
+    ]
+  },
+  "depends": {
+    "fabric-api": ">=0.92.7",
+    "fabricloader": ">=0.19.1",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  }
+}
