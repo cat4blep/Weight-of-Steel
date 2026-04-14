@@ -1,3 +1,4 @@
+[![Build](https://github.com/cat4blep/Weight-of-Steel/actions/workflows/build.yml/badge.svg?branch=fabric-1.21.1)](https://github.com/cat4blep/Weight-of-Steel/actions/workflows/build.yml)
 # Weight of Steel
 
 ![Weight of Steel icon](src/main/resources/icon.png)
