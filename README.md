@@ -1,3 +1,4 @@
+Discuss on Discord -> https://discord.gg/fQqJsPmQrP [![Build](https://github.com/cat4blep/Weight-of-Steel/actions/workflows/build.yml/badge.svg)](https://github.com/cat4blep/Weight-of-Steel/actions/workflows/build.yml)
 # Weight of Steel
 
 ![Weight of Steel icon](src/main/resources/icon.png)
