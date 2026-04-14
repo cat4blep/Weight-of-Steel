@@ -22,7 +22,7 @@ repositories {
 }
 
 base {
-    archivesName = mod_id
+    archivesName = 'armor-weight-neoforge-1.21.11'
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
@@ -117,3 +117,4 @@ idea {
         downloadJavadoc = true
     }
 }
+
