@@ -9,7 +9,7 @@ version = '1.0.0'
 group = 'ru.ke4e.armorweight'
 
 base {
-    archivesName = 'armorweight'
+    archivesName = 'armor-weight-forge-26.1.2'
 }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(25)
@@ -53,3 +53,4 @@ dependencies {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
+
