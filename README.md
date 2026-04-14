@@ -1,4 +1,3 @@
-[![Build](https://github.com/cat4blep/Weight-of-Steel/actions/workflows/build.yml/badge.svg?branch=fabric-1.21.11)](https://github.com/cat4blep/Weight-of-Steel/actions/workflows/build.yml)
 # Weight of Steel
 
 ![Weight of Steel icon](src/main/resources/icon.png)
@@ -11,7 +10,7 @@ It slows the player based on the actual weight of equipped armor without using t
 - Loader: `Fabric`
 - Minecraft version: `1.21.11`
 - Branch: `fabric-1.21.11`
-- Built jar: `armor-weight-1.0.0.jar`
+- Built jar: `armor-weight-fabric-1.21.11-1.0.0.jar`
 
 ## Features
 
@@ -21,16 +20,10 @@ It slows the player based on the actual weight of equipped armor without using t
 - JSON config supports global tuning and per-item overrides.
 - Modded armor can be tuned by exact item id such as `modid:custom_chestplate`.
 
-## How it works
-
-The mod calculates armor weight from the equipped pieces and converts it into a movement speed penalty.
-By default it uses armor stats such as armor, toughness, and knockback resistance.
-If an item has a manual override in the config, the custom value is used instead.
-
 ## Installation
 
 1. Install `Fabric` for Minecraft `1.21.11`.
-2. Put `armor-weight-1.0.0.jar` into your `mods` folder.
+2. Put `armor-weight-fabric-1.21.11-1.0.0.jar` into your `mods` folder.
 3. Start the game once to generate `config/armorweight.json`.
 4. Edit the config if you want different weights or slowdown strength.
 5. Restart the game after changing the config.
@@ -65,15 +58,6 @@ Example:
 }
 ```
 
-Key fields:
-
-- `showTooltip`: show weight in the item tooltip.
-- `weightToSlowdown`: converts total weight into slowdown.
-- `maxSlowdown`: hard cap for the speed penalty.
-- `toughnessWeight`: extra weight taken from armor toughness.
-- `knockbackWeight`: extra weight taken from knockback resistance.
-- `itemOverrides`: per-item manual weights.
-
 ## Building
 
 Windows:
@@ -90,9 +74,3 @@ Linux / GitHub Actions:
 
 This branch uses Java `21` for builds.
 GitHub Actions uploads the built jar from `build/libs` as an artifact after a successful run.
-
-## Notes
-
-- The mod is designed to work with modded armor too.
-- New armor entries are synced into the config after launching the game.
-- If the config becomes invalid, the mod recreates it and keeps a backup.
