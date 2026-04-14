@@ -1,0 +1,43 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.3.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Minecraft Mavenizer 0.4.55 by Forge Development LLC
+  Output:             C:\armor-weight\forge 1.21.1\.gradle\mavenizer\repo
+  Output JSON:        C:\armor-weight\forge 1.21.1\.gradle\mavenizer\dependencies\default.json
+  Dependencies Only:  false
+  Cache:              C:\Users\kdevy\.gradle\caches\minecraftforge\forgegradle\mavenizer\caches
+  JDK Cache:          C:\Users\kdevy\.gradle\caches\minecraftforge\forgegradle\mavenizer\caches
+  Offline:            false
+  Cache Only:         false
+  Ignore Cache:       false
+  Mappings:           official
+  Foreign Repos:      [https://repo.maven.apache.org/maven2/, https://maven.minecraftforge.net/, https://libraries.minecraft.net/]
+  GradleVariantHack:  true
+  Disable Gradle:     false
+  Stub Jars:          false
+
+Processing Minecraft dependency: net.minecraftforge:forge:1.21.1-52.1.14
+Processing Minecraft Forge (userdev): 1.21.1-52.1.14
+Mappings Zip
+  downloadLauncherManifest
+  downloadVersionJson[1.21.1]
+  download[1.21.1][client_mappings]
+  extract[mappings]
+  mergeMappings
+  download[1.21.1][server_mappings]
+  srg2names[official-1.21.1]
+    Cache miss!
+    java.lang.Exception: Cache miss! Stacktrace for Information Only
+    	at net.minecraftforge.mcmaven.impl.Mavenizer.assertNotCacheOnly(Mavenizer.java:60)
+    	at net.minecraftforge.mcmaven.impl.Mavenizer.checkCache(Mavenizer.java:94)
+    	at net.minecraftforge.mcmaven.impl.mappings.Mappings.getMappings(Mappings.java:249)
+    	at net.minecraftforge.mcmaven.impl.mappings.Mappings.lambda$getCsvZip$0(Mappings.java:167)
+    	at net.minecraftforge.mcmaven.impl.util.Task$Simple.execute(Task.java:123)
+    	at net.minecraftforge.mcmaven.impl.repo.Repo$PendingArtifact.get(Repo.java:259)
+    	at net.minecraftforge.mcmaven.impl.MinecraftMaven.finalize(MinecraftMaven.java:326)
+    	at net.minecraftforge.mcmaven.impl.MinecraftMaven.createForge(MinecraftMaven.java:194)
+    	at net.minecraftforge.mcmaven.impl.MinecraftMaven.run(MinecraftMaven.java:138)
+    	at net.minecraftforge.mcmaven.cli.MavenTask.run(MavenTask.java:206)
+    	at net.minecraftforge.mcmaven.cli.Main.run(Main.java:70)
+    	at net.minecraftforge.mcmaven.cli.Main.main(Main.java:23)
