@@ -7,7 +7,7 @@ version = project.mod_version
 group = project.maven_group
 
 base {
-	archivesName = project.archives_base_name
+	archivesName = 'armor-weight-fabric-1.20.1'
 }
 
 repositories {
@@ -53,3 +53,4 @@ publishing {
 	repositories {
 	}
 }
+
