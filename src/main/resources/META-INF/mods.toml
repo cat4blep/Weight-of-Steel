@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[64,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="armorweight"
+version="1.0.0"
+displayName="Armor Weight"
+logoFile="icon.png"
+authors="cat4blep"
+description='''Slows players based on armor weight with per-item configurable weights.'''
+
+[[dependencies.armorweight]]
+    modId="forge"
+    mandatory=true
+    versionRange="[64,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.armorweight]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[26.1.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
