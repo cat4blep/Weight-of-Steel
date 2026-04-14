@@ -13,11 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Java 17
+      - name: Set up Java 21
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: '21'
 
       - name: Set up Gradle cache
         uses: gradle/actions/setup-gradle@v4
@@ -34,3 +34,4 @@ jobs:
           name: fabric-1.20.1-jars
           path: build/libs/*.jar
           if-no-files-found: error
+
